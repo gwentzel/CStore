@@ -29,9 +29,5 @@ namespace C_Store.Models
         {
             return new ApplicationDbContext();
         }
-
-        public System.Data.Entity.DbSet<C_Store.Models.Order> Orders { get; set; }
-
-        public System.Data.Entity.DbSet<C_Store.Models.Product> Products { get; set; }
     }
 }

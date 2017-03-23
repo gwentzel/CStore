@@ -12,7 +12,7 @@ namespace C_Store.Controllers
 {
     public class OrdersController : Controller
     {
-        private ApplicationDbContext db = new ApplicationDbContext();
+        private StoreContext db = new StoreContext();
 
         // GET: Orders
         public ActionResult Index()
