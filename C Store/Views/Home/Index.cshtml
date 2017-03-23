@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>C# Store</h1>
+    <p class="lead">Contains Products and Orders</p>
+    
+</div>
+
+<div >
+    @Html.ActionLink("List of Products", "Index","Products") <br />
+    @Html.ActionLink("List of Orders", "Index", "Orders")
+</div>
