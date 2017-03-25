@@ -4,6 +4,7 @@ namespace C_Store.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using C_Store;
 
     internal sealed class Configuration : DbMigrationsConfiguration<C_Store.StoreContext>
     {
@@ -12,19 +13,19 @@ namespace C_Store.Migrations
             AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(C_Store.StoreContext context)
+        protected override void Seed(C_Store.StoreContext StoreContext)
         {
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
+            
+            //    StoreContext.Products.AddOrUpdate(
+            //      p => p.Name,
+                //  new product { Name = "apple" },
+                //  new Product { Name = "orange" }
+         
+            //   );
             //
         }
     }
