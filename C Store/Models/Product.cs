@@ -7,6 +7,8 @@ using System.ComponentModel.DataAnnotations;
 namespace C_Store.Models
 {
     public class Product
+  // Set up  Product class fields
+
     {
         [ScaffoldColumn(false)]
             public int Id { get; set; }

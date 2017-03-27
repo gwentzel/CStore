@@ -16,9 +16,8 @@ namespace C_Store.Migrations
         protected override void Seed(C_Store.StoreContext StoreContext)
         {
             //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
+                    
+            //  Seed data.
             
             //    StoreContext.Products.AddOrUpdate(
             //      p => p.Name,

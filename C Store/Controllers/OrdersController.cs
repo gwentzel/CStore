@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using C_Store.Models;
 
 namespace C_Store.Controllers
+    // Set up Database context for Store
 {
     public class OrdersController : Controller
     {
@@ -42,8 +43,7 @@ namespace C_Store.Controllers
         }
 
         // POST: Orders/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+                
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,Customer")] Order order)
@@ -73,9 +73,9 @@ namespace C_Store.Controllers
             return View(order);
         }
 
-        // POST: Orders/Edit/5
+        // POST: Orders/Edit
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "Id,Customer")] Order order)
@@ -89,7 +89,7 @@ namespace C_Store.Controllers
             return View(order);
         }
 
-        // GET: Orders/Delete/5
+        // GET: Orders/Delete
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -104,7 +104,7 @@ namespace C_Store.Controllers
             return View(order);
         }
 
-        // POST: Orders/Delete/5
+        // POST: Orders/Delete
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
